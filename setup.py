@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 import os
-from setuptools import find_packages, setup
+from setuptools import dist,find_packages, setup
+
+Distribution().fetch_build_eggs(['torch'])
 
 import torch
 from torch.utils.cpp_extension import (BuildExtension, CppExtension,
