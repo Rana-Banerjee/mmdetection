@@ -2,7 +2,7 @@
 import os
 from setuptools import dist,find_packages, setup
 
-dist.Distribution().fetch_build_eggs(['numpy','torch'])
+dist.Distribution().fetch_build_eggs(['torch'])
 
 import torch
 from torch.utils.cpp_extension import (BuildExtension, CppExtension,
